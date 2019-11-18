@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>RoseMaps</title>
+</head>
+
+<body>
+  <!-- Top Nav Bar -->
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">RoseMaps</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a id="menuSearch" class="nav-item nav-link active" href="searchClasses.html">Search For Classrooms</a>
+        <a id="menuEdit" class="nav-item nav-link" href="editSchedule.html">Edit Schedule</a>
+        <a id="menuHome" class="nav-item nav-link" href="userHome.html">Home</a>
+        <a id="menuSignOut" class="nav-item nav-link" href="index.html">Sign Out</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="search-page">
+    <!-- Start of Jumbotron -->
+    <div class=" jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-10 px-0">
+        <h1 class="display-4 font-italic font-weight-bold">What are you looking for?</h1>
+        <p class="lead my-3"><b>Enter the building letter and the class number and RoseMaps will take care of the
+            rest!</b></p>
+      </div>
+
+      <!-- Start of Class Buttons -->
+      <form>
+        <div class="form-group">
+          <label for="classLetter" class="display-20 font-italic">Building Letter</label>
+          <select class="form-control" id="classLetter">
+            <option>A</option>
+            <option>B</option>
+            <option>BL</option>
+            <option>C</option>
+            <option>CL</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+            <option>FL</option>
+            <option>G</option>
+            <option>GM</option>
+            <option>HH</option>
+            <option>KIC</option>
+            <option>M</option>
+            <option>O</option>
+          </select>
+          <label for="classNumber" class="display-20 font-italic">Class Number: </label>
+          <input type="number" class="form-control" id="classNumber" placeholder="ex. 203" />
+        </div>
+      </form>
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#searchButton">Find my
+        class!</button>
+      <!-- End of Class Buttons -->
+
+      <!-- Start of Modal Content -->
+      <div class="modal fade" id="searchButton" tabindex="-1" role="dialog" aria-labelledby="searchButtonLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="modal-body" class="modal-body"> </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal Content -->
+  </div>
+  <!-- End of Jumbotron -->
+
+  <!-- Start of Building Cards -->
+  <div class="row mb-2">
+    <div class="hallLeft hallCol col-md-5">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="hallCard col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Olin Hall</h3>
+          <br>
+          <p class="card-text mb-auto">This hall contains classes starting with the following prefixes: O.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img id="roselogo" class="mx-auto" src="images/olin.jpg" alt="Rose-Hulman logo"
+            style="width:250px;height:250px;">
+        </div>
+      </div>
+    </div>
+    <div class="hallRight col-md-5">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="hallCard col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Moench Hall</h3>
+          <br>
+          <p class="mb-auto">This hall contains classes starting with the following prefixes: A, B, BL, C, CL, D,
+            DL, E, FL, and F. </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img id="roselogo" class="mx-auto" src="images/moench.jpg" alt="Rose-Hulman logo"
+            style="width:250px;height:250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="hallLeft hallCol col-md-5">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="hallCard col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Crapo Hall</h3>
+          <br>
+          <p class="card-text mb-auto">This hall contains classes starting with the following prefixes: G.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img id="roselogo" class="mx-auto" src="images/crapo.jpg" alt="Rose-Hulman logo"
+            style="width:250px;height:250px;">
+        </div>
+      </div>
+    </div>
+    <div class="hallRight col-md-5">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="hallCard col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Meyers Hall</h3>
+          <br>
+          <p class="mb-auto">This hall contains classes starting with the following prefixes: M. </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img id="roselogo" class="mx-auto" src="images/meyers.jpg" alt="Rose-Hulman logo"
+            style="width:250px;height:250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="hallLeft hallCol col-md-5">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="hallCard col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">KIC/BIC</h3>
+          <br>
+          <p class="card-text mb-auto">This building contains classes starting with the following prefixes: KIC.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img id="roselogo" class="mx-auto" src="images/kic.jpg" alt="Rose-Hulman logo"
+            style="width:250px;height:250px;">
+        </div>
+      </div>
+    </div>
+    <div class="hallRight col-md-5">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="hallCard col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Hatfield Hall</h3>
+          <br>
+          <p class="mb-auto">This hall contains classes starting with the following prefixes: HH. </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img id="roselogo" class="mx-auto" src="images/hatfield.jpg" alt="Rose-Hulman logo"
+            style="width:250px;height:250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Start of Building Cards -->
+
+  </div>
+  <!-- End of Page Container -->
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-app.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-auth.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

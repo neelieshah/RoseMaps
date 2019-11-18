@@ -1,0 +1,153 @@
+body {
+    background-image: url("https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=1680&height=824&name=map-xl.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: darkgray;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+    font-family: "Playfair Display", Georgia;
+
+}
+
+.page-container {
+    margin-top: 70px;
+}
+
+.display-20 {
+    font-size: .5em;
+}
+
+#targetButton{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-size: .6em;
+}
+
+#modal-body-save{
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+/* #fab {
+    position: fixed;
+    bottom: 4px;
+    right: 0px;
+    z-index: 999;
+}
+
+#fab:active {
+    transform: translateY(4px);
+    opacity: 0.8;
+} */
+
+.btn-outline-light {
+    color: #800000;
+}
+
+.modal-header {
+    border: none;
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    border: none;
+    padding-top: 0;
+}
+
+[data-toggle="dropdown"] {
+    cursor: pointer;
+}
+
+#roselogo {
+    display: block;
+}
+
+#rosefireButton {
+    display: block;
+    margin-top: 30px;
+    background: #800000;
+
+}
+
+#guestButton {
+    display: block;
+    margin-top: 10px;
+    background: #800000;
+}
+
+.btn-danger {
+    background-color: #800000;
+}
+
+.btn-danger:hover {
+    background-color: #880000;
+}
+
+.initially-hidden {
+    display: none;
+}
+
+.modal-body {
+    color: black;
+    font-size: .5em;
+}
+
+.jumbotron {
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+}
+
+.schedule {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 1400px;
+}
+
+#home-table{
+    font-size: .5em;
+}
+.div1 {
+    width: 100px;
+    height: 20px;
+    padding-left: 2px;
+    border: 1px solid #aaaaaa;
+    font-size: 10px;
+
+}
+
+
+#saveSchedule {
+    display: block;
+    margin-left: 75px;
+    margin-bottom: 75px;
+}
+
+.hallCard {
+    background-color: white;
+}
+
+.halls {
+    margin-left: 200px;
+}
+
+.hallRight {
+    margin-left: 100px;
+
+}
+
+.hallLeft {
+    margin-left: 80px;
+}
+

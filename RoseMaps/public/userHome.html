@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>RoseMaps</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">RoseMaps</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a id="menuHome" class="nav-item nav-link active" href="userHome.html">Home</a>
+        <a id="menuEdit" class="nav-item nav-link" href="editSchedule.html">Edit Schedule</a>
+        <a id="menuSearch" class="nav-item nav-link" href="searchClasses.html">Search For Classrooms</a>
+        <a id="menuSignOut" class="nav-item nav-link" href="index.html">Sign Out</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="user-page" class="container page-container"></div>
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 id="userHeader" class="display-4 font-italic font-weight-bold">User Class Schedule</h1>
+      <p class="lead my-3"><b>RoseMaps takes your daily schedule and helps you get to where you need to go everyday by
+          telling you how to get to your classes!</b></p>
+      <button type="button" class="text-white font-weight-bold" data-toggle="modal" id="targetButton"
+        data-target="#classesModal"><u>
+        Tell me where to go...</u>
+      </button>
+      <br>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="classesModal" tabindex="-1" role="dialog" aria-labelledby="classesModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="classesModal">Classes</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id = "modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <h1 class="display-5 font-italic font-weight-bold">Your Current Class Schedule...</h1>
+      <br>
+      <table id="home-table" class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">8:00</th>
+            <th scope="col">9:00</th>
+            <th scope="col">10:00</th>
+            <th scope="col">11:00</th>
+            <th scope="col">12:00</th>
+            <th scope="col">1:00</th>
+            <th scope="col">2:00</th>
+            <th scope="col">3:00</th>
+            <th scope="col">4:00</th>
+            <th scope="col">5:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">M</th>
+            <td>
+              <div id="class-1"></div>
+            </td>
+            <td>
+              <div id="class-2"></div>
+            </td>
+            <td>
+              <div id="class-3"></div>
+            </td>
+            <td>
+              <div id="class-4"></div>
+            </td>
+            <td>
+              <div id="class-5"></div>
+            </td>
+            <td>
+              <div id="class-6"></div>
+            </td>
+            <td>
+              <div id="class-7"></div>
+            </td>
+            <td>
+              <div id="class-8"></div>
+            </td>
+            <td>
+              <div id="class-9"></div>
+            </td>
+            <td>
+              <div id="class-10"></div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">T</th>
+            <td>
+              <div id="class-11"></div>
+            </td>
+            <td>
+              <div id="class-12"></div>
+            </td>
+            <td>
+              <div id="class-13"></div>
+            </td>
+            <td>
+              <div id="class-14"></div>
+            </td>
+            <td>
+              <div id="class-15"></div>
+            </td>
+            <td>
+              <div id="class-16"></div>
+            </td>
+            <td>
+              <div id="class-17"></div>
+            </td>
+            <td>
+              <div id="class-18"></div>
+            </td>
+            <td>
+              <div id="class-19"></div>
+            </td>
+            <td>
+              <div id="class-20"></div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">W</th>
+            <td>
+              <div id="class-21"></div>
+            </td>
+            <td>
+              <div id="class-22"></div>
+            </td>
+            <td>
+              <div id="class-23"></div>
+            </td>
+            <td>
+              <div id="class-24"></div>
+            </td>
+            <td>
+              <div id="class-25"></div>
+            </td>
+            <td>
+              <div id="class-26"></div>
+            </td>
+            <td>
+              <div id="class-27"></div>
+            </td>
+            <td>
+              <div id="class-28"></div>
+            </td>
+            <td>
+              <div id="class-29"></div>
+            </td>
+            <td>
+              <div id="class-30"></div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Th</th>
+            <td>
+              <div id="class-31"></div>
+            </td>
+            <td>
+              <div id="class-32"></div>
+            </td>
+            <td>
+              <div id="class-33"></div>
+            </td>
+            <td>
+              <div id="class-34"></div>
+            </td>
+            <td>
+              <div id="class-35"></div>
+            </td>
+            <td>
+              <div id="class-36"></div>
+            </td>
+            <td>
+              <div id="class-37"></div>
+            </td>
+            <td>
+              <div id="class-38"></div>
+            </td>
+            <td>
+              <div id="class-39"></div>
+            </td>
+            <td>
+              <div id="class-40"></div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">F</th>
+            <td>
+              <div id="class-41"></div>
+            </td>
+            <td>
+              <div id="class-42"></div>
+            </td>
+            <td>
+              <div id="class-43"></div>
+            </td>
+            <td>
+              <div id="class-44"></div>
+            </td>
+            <td>
+              <div id="class-45"></div>
+            </td>
+            <td>
+              <div id="class-46"></div>
+            </td>
+            <td>
+              <div id="class-47"></div>
+            </td>
+            <td>
+              <div id="class-48"></div>
+            </td>
+            <td>
+              <div id="class-49"></div>
+            </td>
+            <td>
+              <div id="class-50"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <p class="lead mb-0"><a href="editSchedule.html" class="text-white font-weight-bold"><u>Edit my schedule...</u></a></p> -->
+    </div>
+  </div>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-app.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-auth.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

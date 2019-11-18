@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>RoseMaps</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">RoseMaps</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a id="menuEdit" class="nav-item nav-link active" href="editSchedule.html">Edit Schedule</a>
+        <a id="menuSearch" class="nav-item nav-link" href="searchClasses.html">Search For Classrooms</a>
+        <a id="menuHome" class="nav-item nav-link" href="userHome.html">Home</a>
+        <a id="menuSignOut" class="nav-item nav-link" href="index.html">Sign Out</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="schedule-page">
+    <table class="table table-dark schedule">
+      <thead>
+        <tr>
+          <th scope="col">Day</th>
+          <th scope="col">8:00</th>
+          <th scope="col">9:00</th>
+          <th scope="col">10:00</th>
+          <th scope="col">11:00</th>
+          <th scope="col">12:00</th>
+          <th scope="col">1:00</th>
+          <th scope="col">2:00</th>
+          <th scope="col">3:00</th>
+          <th scope="col">4:00</th>
+          <th scope="col">5:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">M</th>
+          <td><input class="div1" id="class-1" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-2" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-3" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-4" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-5" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-6" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-7" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-8" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-9" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-10" placeholder="ex. CSSE-132 in O169"></input></td>
+        </tr>
+        <tr>
+          <th scope="row">T</th>
+          <td><input class="div1" id="class-11" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-12" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-13" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-14" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-15" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-16" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-17" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-18" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-19" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-20" placeholder="ex. CSSE-132 in O169"></input></td>
+        </tr>
+        <tr>
+          <th scope="row">W</th>
+          <td><input class="div1" id="class-21" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-22" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-23" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-24" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-25" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-26" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-27" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-28" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-29" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-30" placeholder="ex. CSSE-132 in O169"></input></td>
+        </tr>
+        <tr>
+          <th scope="row">Th</th>
+          <td><input class="div1" id="class-31" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-32" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-33" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-34" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-35" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-36" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-37" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-38" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-39" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-40" placeholder="ex. CSSE-132 in O169"></input></td>
+        </tr>
+        <tr>
+          <th scope="row">F</th>
+          <td><input class="div1" id="class-41" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-42" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-43" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-44" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-45" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-46" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-47" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-48" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-49" placeholder="ex. CSSE-132 in O169"></input></td>
+          <td><input class="div1" id="class-50" placeholder="ex. CSSE-132 in O169"></input></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-danger" id="saveSchedule" data-toggle="modal" data-target="#modalPopup">
+      Save my schedule!
+    </button>
+
+    <div class="modal fade" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="modalPopupLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="modal-body-save" class="modal-body">
+            Your new schedule has been saved!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-app.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-auth.js"></script>
+  <script src="/__/firebase/6.3.5/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
